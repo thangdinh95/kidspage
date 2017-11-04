@@ -1,0 +1,87 @@
+nav 
+    background: $l-blue
+    overflow: hidden
+    border: 1px solid
+
+    border-color: $blue $blue $d-blue $blue
+    border-radius: 1rem
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2)
+    a 
+        display: block
+        text-align: center
+        font-family: $main-font
+        font-size: 1rem
+        text-transform: capitalize
+        line-height: 3rem
+        color: #fff
+        border:
+            top: 1px solid $ll-blue
+            bottom: 1px solid $d-blue
+
+        &:last-child
+            border-bottom: 0
+        &:first-child
+            border-top: 0       
+        &.active
+            background: $blue     
+
+        @media(min-width: 768px)
+            float: left
+            padding: 0 1.25rem
+            border:
+                top: 0
+                bottom: 0
+                left: 1px solid $ll-blue
+                right: 1px solid $d-blue
+            &:first-child
+                border-left: 0
+            &:last-child
+                border-right: 1px dotted $d-blue       
+
+.sub-nav
+    border: 1px solid #ddd
+    border-radius: 20px
+    padding: 5px 10px
+    height: 42px
+    position: relative
+    margin-bottom: 1rem
+    background: linear-gradient(#fff, #eee)
+    h4, em
+        font-family: $main-font
+        color: $text-color
+        float: left
+        line-height: 32px
+    em 
+        margin: 0 15px    
+    .check-box
+        float: left
+        margin-top: 3px            
+    a 
+        font-family: $main-font
+        position: absolute
+        top: 0
+        right: 0
+        display: inline-block
+        font-size: 1em
+        line-height: 42px
+        padding: 0 20px
+        background: $pink
+        border-radius: 0 1rem 1rem 0
+        color: #fff
+        &::before
+            content: ''
+            width: 0
+            height: 0
+            border: 6px solid
+            border-color: transparent $pink transparent transparent
+            position: absolute
+            right: 100%
+            top: 50%
+            margin-top: -6px
+    input
+        font-weight: bold
+        color: $pink
+        border: 1px solid #ddd
+        box-shadow: inset 0 2px 10px rgba(0,0,0,0.3) 
+    @media (max-width: 767px)
+        display: none        

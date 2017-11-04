@@ -1,0 +1,60 @@
+aside 
+    width: 160px
+    @media(max-width: 991px)
+        display: none
+    section
+        background: $l-pink
+
+        padding: 5px
+        article
+            background: #fff
+            padding: 5px
+    h5, .h5
+        font-family: $main-font
+        line-height: 2.5rem
+        color: $text-color        
+    h6 
+        border-bottom: 1px solid #ddd
+        font-size: 14px
+        font-weight: bold
+        color: $text-color
+        line-height: 2rem
+    img 
+        width: 60px
+        height: 60px !important
+        margin-right: 5px
+    button.main-btn
+        width: 100%        
+    .d-flex
+        padding: 5px
+        background: linear-gradient(#eee, #ddd)
+        &.active
+            background: $pink
+            span
+                color: #fff 
+    article > a
+        color: $text-color
+        font-size: 13px
+        font-weight: bold
+        display: block
+        text-align: left
+        padding: 10px 0
+        position: relative
+        border: 
+            top: 1px solid #f7f7f7
+            bottom: 1px solid #eee
+        &:first-child
+            border-top: 0
+        &:last-child
+            border-bottom: 0            
+        &::before
+            content: ''
+            display: inline-block
+            width: 6px
+            height: 6px
+            border: 1px solid $text-color
+            margin-right: 4px
+            margin-bottom: 2px
+
+
+

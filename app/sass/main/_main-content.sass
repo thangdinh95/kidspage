@@ -1,0 +1,75 @@
+.main-content
+    flex: 1
+    h5
+        border-bottom: 1px solid #ddd
+        line-height: 3rem
+        font-weight: bold
+        color: $text-color
+    h6 
+        font-weight: bold
+        color: #333
+    p 
+        font-size: 14px
+    section
+        margin-bottom: 1rem
+    .form-group
+        display: flex
+        flex-flow: column
+        select
+            background: #fff
+        input, select
+            width: 100%
+            border: 1px solid #ddd
+            border-radius: 5px
+            box-shadow: inset 0 1px 2px rgba(0,0,0,0.1)
+
+        label, input, select
+            font-size: 14px
+            margin: 0
+            padding: 5px 10px !important
+        button
+            margin-top: 1rem
+            @media(min-width: 767px)
+                margin: 0
+        @media(min-width: 767px)
+            flex-flow: row
+            label
+                min-width: 150px !important
+            &:last-child > input
+                width: 100px
+                margin-right: 20px
+    .d-flex
+        display: none
+        @media(min-width: 767px)
+        flex-flow: row wrap
+        form 
+            flex: 1
+        img
+            display: none
+            @media(min-width: 767px)
+                margin: 0 50px
+                width: 150px
+                height: 150px
+                display: block
+
+.change-password
+    input, button
+        width: 100%
+        padding: 5px 10px 
+        margin-bottom: 1rem
+        border: 1px solid #ddd
+        border-radius: 5px
+        box-shadow: inset 0 1px 2px rgba(0,0,0,0.3)
+    @media (min-width: 767px)
+        input
+            width: 50%
+        button
+            width: auto
+.membership
+    table
+        td, th 
+            font-size: 14px
+            padding: 5px 10px
+        td:last-child
+            color: green
+            font-weight: bold    
